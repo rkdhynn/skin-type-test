@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>피부 타입 테스트</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="intro-panel" aria-labelledby="app-title">
+        <div class="intro-grid">
+          <div>
+            <h1 id="app-title">피부 타입 테스트</h1>
+            <div class="hero-badges" aria-label="테스트 특징">
+              <span>무료 검사</span>
+              <span>30초 소요</span>
+              <span>고민 해결</span>
+            </div>
+            <button id="startBtn" class="hero-cta" type="button">내 피부 고민에 맞는 화장품 골라보기</button>
+          </div>
+          <div class="product-characters" aria-hidden="true">
+            <span class="bubble bubble-one"></span>
+            <span class="bubble bubble-two"></span>
+            <div class="character cleanser">
+              <span class="cap"></span>
+              <span class="face"></span>
+              <span class="label">foam</span>
+            </div>
+            <div class="character toner">
+              <span class="pump"></span>
+              <span class="face"></span>
+              <span class="label">toner</span>
+            </div>
+            <div class="character cream">
+              <span class="lid"></span>
+              <span class="face"></span>
+              <span class="label">cream</span>
+            </div>
+            <div class="character sunscreen">
+              <span class="cap"></span>
+              <span class="sun-dot"></span>
+              <span class="face"></span>
+              <span class="label">spf</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="quizPanel" class="quiz-panel hidden" aria-live="polite">
+        <div class="progress-row">
+          <span id="stepLabel">1 / 7</span>
+          <div class="progress-track" aria-hidden="true">
+            <span id="progressFill"></span>
+          </div>
+        </div>
+
+        <article id="questionCard" class="question-card">
+          <p id="questionEyebrow" class="question-eyebrow"></p>
+          <h2 id="questionTitle"></h2>
+          <div id="answerList" class="answer-list"></div>
+        </article>
+
+        <div class="nav-row">
+          <button id="backBtn" class="ghost-btn" type="button">이전</button>
+          <button id="resetBtn" class="ghost-btn" type="button">처음부터</button>
+        </div>
+      </section>
+
+      <section id="resultPanel" class="result-panel hidden" aria-live="polite">
+        <div class="result-header">
+          <p class="kicker">피부 타입 결과</p>
+          <h2 id="resultTitle"></h2>
+          <p id="resultSummary"></p>
+        </div>
+
+        <div class="score-strip" id="scoreStrip" aria-label="피부 타입 점수"></div>
+
+        <div class="routine-block">
+          <div>
+            <h3>아침 루틴</h3>
+            <ol id="morningRoutine"></ol>
+          </div>
+          <div>
+            <h3>저녁 루틴</h3>
+            <ol id="nightRoutine"></ol>
+          </div>
+        </div>
+
+        <div class="avoid-block">
+          <h3>주의할 패턴</h3>
+          <ul id="avoidList"></ul>
+        </div>
+
+        <div class="products-head">
+          <h3>쿠팡에서 찾아볼 제품</h3>
+          <p>특정 판매 페이지 대신 검색 링크로 연결해 품절이나 가격 변동에 덜 흔들리게 했습니다.</p>
+        </div>
+        <div id="productGrid" class="product-grid"></div>
+
+        <div class="result-actions">
+          <button id="retakeBtn" class="primary-btn" type="button">다시 테스트</button>
+          <button id="shareBtn" class="ghost-btn" type="button">결과 복사</button>
+        </div>
+      </section>
+
+      <p class="fine-print">
+        이 결과는 생활 루틴 선택을 돕는 참고용입니다. 따가움, 발진, 심한 여드름, 알레르기 의심 증상이 지속되면 피부과 진료를 우선하세요.
+      </p>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
