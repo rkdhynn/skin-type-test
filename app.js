@@ -312,7 +312,6 @@ const state = {
 const $ = (selector) => document.querySelector(selector);
 
 const stepLabel = $("#stepLabel");
-const progressFill = $("#progressFill");
 const questionEyebrow = $("#questionEyebrow");
 const questionTitle = $("#questionTitle");
 const answerList = $("#answerList");
@@ -330,7 +329,6 @@ const introPanel = document.querySelector(".intro-panel");
 function renderQuestion({ hideIntro = true } = {}) {
   const question = questions[state.step];
   stepLabel.textContent = `${state.step + 1} / ${questions.length}`;
-  progressFill.style.width = `${(state.step / questions.length) * 100}%`;
   questionEyebrow.textContent = question.eyebrow;
   questionTitle.textContent = question.title;
   answerList.replaceChildren();
@@ -341,10 +339,8 @@ function renderQuestion({ hideIntro = true } = {}) {
     button.type = "button";
     button.style.setProperty("--chip-color", answer.color);
     button.innerHTML = `
-      <span class="answer-glyph" aria-hidden="true"></span>
       <span class="answer-copy">
         <span class="answer-title">${answer.title}</span>
-        <span class="answer-desc">${answer.desc}</span>
       </span>
     `;
     button.addEventListener("click", () => chooseAnswer(answer));
@@ -369,7 +365,6 @@ function chooseAnswer(answer) {
     return;
   }
 
-  progressFill.style.width = "100%";
   renderResult();
 }
 
