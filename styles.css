@@ -103,17 +103,19 @@ p {
 }
 
 h1 {
-  max-width: 8ch;
+  max-width: none;
   margin-bottom: 16px;
   color: var(--sky-deep);
-  font-size: clamp(3rem, 16vw, 5rem);
-  line-height: 0.96;
-  font-weight: 900;
+  font-size: clamp(2.05rem, 9.6vw, 3.5rem);
+  line-height: 1.05;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 .hero-badges {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
 }
 
@@ -143,7 +145,7 @@ h1 {
   color: #ffffff;
   font: inherit;
   font-size: 0.95rem;
-  font-weight: 900;
+  font-weight: 700;
   cursor: pointer;
 }
 
