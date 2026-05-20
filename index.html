@@ -68,13 +68,29 @@
       </section>
 
       <section id="resultPanel" class="result-panel hidden" aria-live="polite">
-        <div class="result-header">
-          <p class="kicker">피부 타입 결과</p>
+        <div class="result-card">
+          <div id="resultVisual" class="result-visual" role="img" aria-label="피부 타입 일러스트">
+            <span class="sky-cloud cloud-left"></span>
+            <span class="sky-cloud cloud-right"></span>
+            <span class="sparkle sparkle-one"></span>
+            <span class="sparkle sparkle-two"></span>
+            <span class="sparkle sparkle-three"></span>
+            <div class="portrait">
+              <span class="hair"></span>
+              <span class="neck"></span>
+              <span class="face-shape"></span>
+              <span class="cheek cheek-left"></span>
+              <span class="cheek cheek-right"></span>
+              <span class="eye eye-left"></span>
+              <span class="eye eye-right"></span>
+              <span class="mouth"></span>
+              <span class="hand"></span>
+            </div>
+          </div>
           <h2 id="resultTitle"></h2>
-          <p id="resultSummary"></p>
+          <p id="resultTags" class="result-tags"></p>
+          <p id="resultSummary" class="result-copy"></p>
         </div>
-
-        <div class="score-strip" id="scoreStrip" aria-label="피부 타입 점수"></div>
 
         <div class="routine-block">
           <div>
@@ -88,7 +104,7 @@
         </div>
 
         <div class="avoid-block">
-          <h3>주의할 패턴</h3>
+          <h3>주의 패턴</h3>
           <ul id="avoidList"></ul>
         </div>
 

@@ -214,13 +214,15 @@ const questions = [
 const typeData = {
   oily: {
     label: "지성",
-    color: "#d4a23d",
-    title: "지성 피부",
-    summary:
-      "피지 분비가 빠르고 모공 고민이 동반되기 쉬운 타입입니다. 세정력보다 균형 잡힌 수분 공급과 산뜻한 마무리가 핵심입니다.",
-    morning: ["미온수 또는 약산성 젤 클렌저로 가볍게 세안", "나이아신아마이드 또는 수분 토너 한 겹", "오일 프리 로션으로 얇게 보습", "가벼운 선젤 또는 유분 적은 선크림"],
-    night: ["선크림을 바른 날은 클렌징 오일 또는 워터 후 2차 세안", "BHA 제품은 주 1-2회만", "수분 세럼 후 산뜻한 젤 크림", "트러블 부위만 스팟 케어"],
-    avoid: ["뽀득한 세안감을 위해 하루 여러 번 강하게 세안하기", "보습제를 생략해 피지가 더 올라오게 만드는 루틴", "고함량 산 제품을 매일 겹쳐 쓰기"],
+    color: "#1587e8",
+    title: "유분 많은 지성 피부",
+    tags: "#피지 #모공 #번들거림",
+    summaryLead: "번들거림이 빨리 올라오고 모공 고민이 잘 보이는 타입이에요. ",
+    highlight: "유분을 잡되 수분은 남기는 산뜻한 루틴",
+    summaryTail: "이 잘 맞아요.",
+    morning: ["약산성 세안 후 수분 토너", "가벼운 젤크림 + 산뜻한 선크림"],
+    night: ["선크림은 꼼꼼히 클렌징", "BHA는 주 1-2회만"],
+    avoid: ["뽀득한 과세안", "보습 생략", "고함량 산 매일 사용"],
     products: [
       ["CL", "약산성 젤 클렌저", "코스알엑스 약산성 굿모닝 젤 클렌저"],
       ["TO", "피지 밸런스 토너", "아누아 어성초 토너"],
@@ -230,13 +232,15 @@ const typeData = {
   },
   dry: {
     label: "건성",
-    color: "#b96848",
-    title: "건성 피부",
-    summary:
-      "수분과 유분이 모두 부족해 당김, 각질, 들뜸이 쉽게 생기는 타입입니다. 세안 단계를 줄이고 보습막을 오래 유지하는 루틴이 맞습니다.",
-    morning: ["세안제는 생략하거나 매우 순한 클렌저 사용", "글리세린, 히알루론산 토너를 충분히", "세라마이드 크림으로 보습막 만들기", "촉촉한 크림 타입 선크림"],
-    night: ["메이크업은 부드러운 밀크 또는 밤 타입으로 제거", "각질 제거는 잦게 하지 않기", "수분 세럼 후 리치 크림", "건조 부위는 밤 제형으로 마무리"],
-    avoid: ["매트 선크림만 단독으로 바르기", "스크럽이나 필링젤로 각질을 밀어내기", "뜨거운 물 세안과 긴 샤워"],
+    color: "#1587e8",
+    title: "수분 부족 건성 피부",
+    tags: "#당김 #각질 #보습 고민",
+    summaryLead: "세안 후 당김과 들뜸이 쉽게 느껴지는 타입이에요. ",
+    highlight: "세안은 줄이고 보습막을 오래 남기는 루틴",
+    summaryTail: "이 피부 컨디션을 편하게 만들어줘요.",
+    morning: ["물세안 또는 순한 세안", "수분 세럼 + 세라마이드 크림"],
+    night: ["부드럽게 클렌징", "리치 크림으로 마무리"],
+    avoid: ["뜨거운 물 세안", "잦은 스크럽", "매트 제품 단독 사용"],
     products: [
       ["CL", "순한 보습 클렌저", "세타필 젠틀 스킨 클렌저"],
       ["SE", "수분 세럼", "토리든 다이브인 세럼"],
@@ -246,13 +250,15 @@ const typeData = {
   },
   combination: {
     label: "복합성",
-    color: "#76aeb4",
-    title: "복합성 피부",
-    summary:
-      "T존은 유분이 빠르고 볼은 당기는 타입입니다. 제품을 하나로 통일하기보다 부위별 양 조절이 가장 효율적입니다.",
-    morning: ["T존 위주로 가볍게 세안", "수분 토너를 전체에 얇게", "볼에는 크림을 한 번 더, T존은 로션만", "가벼운 선크림을 전체에 고르게"],
-    night: ["T존 피지는 꼼꼼히, 볼은 부드럽게 세안", "코 주변 BHA는 주 1회부터", "전체 수분 세럼 후 부위별 보습제 양 조절", "볼과 입가에만 장벽 크림 덧바르기"],
-    avoid: ["T존 기준으로 얼굴 전체를 건조하게 관리하기", "볼 각질을 피지처럼 강하게 제거하기", "리치 크림을 전 부위에 같은 양으로 바르기"],
+    color: "#1587e8",
+    title: "부위별 복합성 피부",
+    tags: "#T존유분 #볼당김 #밸런스",
+    summaryLead: "T존은 번들거리고 볼은 건조한 신호가 함께 보여요. ",
+    highlight: "부위별로 보습 양을 조절하는 루틴",
+    summaryTail: "이 가장 효율적이에요.",
+    morning: ["T존은 가볍게, 볼은 촉촉하게", "수분 로션 + 선크림"],
+    night: ["T존 피지는 꼼꼼히", "볼에는 장벽 크림 추가"],
+    avoid: ["얼굴 전체를 같은 양으로 바르기", "볼 각질을 강하게 밀기", "T존 기준 과건조 관리"],
     products: [
       ["CL", "균형 클렌저", "라운드랩 1025 독도 클렌저"],
       ["TO", "수분 토너", "라운드랩 1025 독도 토너"],
@@ -262,13 +268,15 @@ const typeData = {
   },
   dehydrated: {
     label: "수부지",
-    color: "#7e9d82",
-    title: "수부지 피부",
-    summary:
-      "겉은 번들거리지만 피부 속 수분감이 빨리 빠지는 타입입니다. 피지 제거보다 수분 유지와 장벽 회복에 초점을 맞추는 편이 좋습니다.",
-    morning: ["약산성 클렌저를 소량만 사용", "히알루론산 또는 판테놀 수분 세럼", "가벼운 장벽 크림으로 수분 잠그기", "건조하지 않은 수분 선크림"],
-    night: ["자극 적은 클렌징으로 선크림 제거", "닦토 대신 흡수시키는 토너", "판테놀, 세라마이드, 시카 중심 보습", "피지 케어 제품은 피부가 편한 날만"],
-    avoid: ["기름기를 없애려고 보습을 줄이기", "알코올감 강한 토너로 매일 닦아내기", "속당김이 있는데 매트 제품만 고집하기"],
+    color: "#1587e8",
+    title: "수분부족 지성 민감",
+    tags: "#여드름 #잡티 #탄력 고민",
+    summaryLead: "겉은 번들거리지만 속은 건조한, 유분과 수분의 균형이 무너진 피부예요. 그래서 피지만 잡는 관리보다 ",
+    highlight: "수분 충전과 산뜻한 보습을 함께하는 루틴",
+    summaryTail: "이 필요해요.",
+    morning: ["약산성 세안 + 수분 세럼", "가벼운 장벽 크림 + 수분 선크림"],
+    night: ["자극 적은 클렌징", "판테놀/세라마이드 보습"],
+    avoid: ["보습 줄이기", "알코올 토너로 매일 닦기", "매트 제품만 쓰기"],
     products: [
       ["CL", "약산성 클렌저", "비플레인 녹두 약산성 클렌징폼"],
       ["SE", "수분 진정 세럼", "토리든 다이브인 세럼"],
@@ -278,13 +286,15 @@ const typeData = {
   },
   sensitive: {
     label: "민감",
-    color: "#d47b73",
-    title: "민감성 피부",
-    summary:
-      "붉은기, 따가움, 열감이 빠르게 올라오는 타입입니다. 기능성 개수를 줄이고 무향, 저자극, 장벽 중심으로 단순하게 가져가세요.",
-    morning: ["물세안 또는 저자극 클렌저", "따갑지 않은 진정 토너 한 겹", "판테놀 또는 세라마이드 크림", "눈시림이 적은 무기자차부터 테스트"],
-    night: ["클렌징은 문지르는 시간을 줄이기", "새 기능성 제품은 하나씩 2주 간격으로", "진정 세럼 후 장벽 크림", "붉은 날은 각질 제거와 레티놀 쉬기"],
-    avoid: ["향이 강한 제품과 물리 스크럽", "따가운데 참고 계속 쓰기", "여러 신제품을 같은 주에 시작하기"],
+    color: "#1587e8",
+    title: "자극 민감성 피부",
+    tags: "#홍조 #열감 #장벽 고민",
+    summaryLead: "붉은기와 따가움이 쉽게 올라오는 타입이에요. ",
+    highlight: "기능성은 줄이고 장벽을 먼저 달래는 루틴",
+    summaryTail: "이 피부를 안정시키는 데 잘 맞아요.",
+    morning: ["물세안 또는 저자극 세안", "진정 크림 + 순한 선크림"],
+    night: ["짧고 부드러운 클렌징", "시카/판테놀 보습"],
+    avoid: ["향 강한 제품", "따가운데 계속 사용", "신제품 여러 개 동시 사용"],
     products: [
       ["CL", "저자극 클렌저", "라로슈포제 똘러리앙 클렌저"],
       ["CR", "시카 크림", "라로슈포제 시카플라스트 밤 B5"],
@@ -314,6 +324,7 @@ const retakeBtn = $("#retakeBtn");
 const shareBtn = $("#shareBtn");
 const startBtn = $("#startBtn");
 const quizPanel = $("#quizPanel");
+const resultVisual = $("#resultVisual");
 
 function renderQuestion() {
   const question = questions[state.step];
@@ -405,23 +416,6 @@ function renderList(target, items) {
   });
 }
 
-function renderScores(scores) {
-  const scoreStrip = $("#scoreStrip");
-  const max = Math.max(...Object.values(scores), 1);
-  scoreStrip.replaceChildren();
-
-  Object.entries(typeData).forEach(([type, data]) => {
-    const row = document.createElement("div");
-    row.className = "score-row";
-    row.innerHTML = `
-      <span>${data.label}</span>
-      <span class="score-bar"><span style="--score-width: ${(scores[type] / max) * 100}%; --score-color: ${data.color}"></span></span>
-      <span>${scores[type]}</span>
-    `;
-    scoreStrip.append(row);
-  });
-}
-
 function renderProducts(type) {
   const productGrid = $("#productGrid");
   productGrid.replaceChildren();
@@ -452,12 +446,14 @@ function renderResult() {
   const data = typeData[primaryType];
   const sensitivityNote =
     primaryType !== "sensitive" && scores.sensitive >= 6
-      ? " 민감 신호도 있어 새 제품은 팔 안쪽이나 턱선에 먼저 테스트하는 편이 좋습니다."
+      ? " 새 제품은 턱선에 먼저 테스트해보세요."
       : "";
 
+  resultVisual.className = `result-visual type-${primaryType}`;
+  resultVisual.setAttribute("aria-label", `${data.title} 일러스트`);
   $("#resultTitle").textContent = data.title;
-  $("#resultSummary").textContent = data.summary + sensitivityNote;
-  renderScores(scores);
+  $("#resultTags").textContent = data.tags;
+  $("#resultSummary").innerHTML = `${data.summaryLead}<strong>${data.highlight}</strong>${data.summaryTail}${sensitivityNote}`;
   renderList($("#morningRoutine"), data.morning);
   renderList($("#nightRoutine"), data.night);
   renderList($("#avoidList"), data.avoid);
