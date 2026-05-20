@@ -430,7 +430,7 @@ h1 {
   max-width: 14ch;
   color: #000000;
   text-align: center;
-  font-size: clamp(1.8rem, 7.8vw, 2.5rem);
+  font-size: clamp(1.35rem, 5.85vw, 1.88rem);
   line-height: 1.22;
   font-weight: 700;
   word-break: keep-all;
@@ -462,14 +462,11 @@ h1 {
   transition: transform 160ms ease, border-color 160ms ease, background 160ms ease, color 160ms ease;
 }
 
-.answer-btn.selected {
+.answer-btn.selected,
+.answer-btn:hover {
   border-color: #4f96f4;
   background: #4f96f4;
   color: #ffffff;
-}
-
-.answer-btn:hover {
-  border-color: #4f96f4;
 }
 
 .answer-btn:active {
