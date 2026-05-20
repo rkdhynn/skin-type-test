@@ -418,7 +418,7 @@ h1 {
   transition: transform 160ms ease, border-color 160ms ease, background 160ms ease, color 160ms ease;
 }
 
-.answer-btn:first-child {
+.answer-btn.selected {
   border-color: #4f96f4;
   background: #4f96f4;
   color: #ffffff;

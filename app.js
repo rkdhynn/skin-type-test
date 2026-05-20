@@ -343,7 +343,14 @@ function renderQuestion({ hideIntro = true } = {}) {
         <span class="answer-title">${answer.title}</span>
       </span>
     `;
-    button.addEventListener("click", () => chooseAnswer(answer));
+    button.addEventListener("click", () => {
+      answerList.querySelectorAll(".answer-btn").forEach((item) => {
+        item.classList.remove("selected");
+        item.disabled = true;
+      });
+      button.classList.add("selected");
+      setTimeout(() => chooseAnswer(answer), 180);
+    });
     answerList.append(button);
   });
 
