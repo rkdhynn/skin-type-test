@@ -388,7 +388,7 @@ h1 {
 
 .quiz-panel {
   margin-top: 16px;
-  padding: 52px 28px 36px;
+  padding: 34px 28px 36px;
   border-radius: 42px;
 }
 
@@ -403,19 +403,19 @@ h1 {
 .progress-row {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 24px;
 }
 
 #stepLabel {
-  min-width: 96px;
-  min-height: 52px;
-  padding: 8px 22px;
+  min-width: 48px;
+  min-height: 26px;
+  padding: 4px 11px;
   display: inline-grid;
   place-items: center;
   border-radius: 999px;
   background: #4f96f4;
   color: #ffffff;
-  font-size: 1.45rem;
+  font-size: 0.72rem;
   font-weight: 500;
   line-height: 1;
 }
@@ -426,13 +426,13 @@ h1 {
 }
 
 .question-card h2 {
-  margin: 0 auto 34px;
+  margin: 0 auto 28px;
   max-width: 14ch;
   color: #000000;
   text-align: center;
   font-size: clamp(1.8rem, 7.8vw, 2.5rem);
   line-height: 1.22;
-  font-weight: 900;
+  font-weight: 700;
   word-break: keep-all;
 }
 
@@ -491,8 +491,8 @@ h1 {
 }
 
 .answer-title {
-  font-size: clamp(1.25rem, 6vw, 2rem);
-  font-weight: 900;
+  font-size: clamp(0.94rem, 4.5vw, 1.5rem);
+  font-weight: 400;
   line-height: 1.18;
   word-break: keep-all;
 }
@@ -502,6 +502,10 @@ h1 {
   display: flex;
   gap: 10px;
   justify-content: space-between;
+}
+
+.nav-row {
+  margin-top: 24px;
 }
 
 .ghost-btn,

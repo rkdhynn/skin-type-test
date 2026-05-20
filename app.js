@@ -325,6 +325,7 @@ const startBtn = $("#startBtn");
 const quizPanel = $("#quizPanel");
 const resultVisual = $("#resultVisual");
 const introPanel = document.querySelector(".intro-panel");
+let answerTimer = null;
 
 function renderQuestion({ hideIntro = true } = {}) {
   const question = questions[state.step];
@@ -344,12 +345,16 @@ function renderQuestion({ hideIntro = true } = {}) {
       </span>
     `;
     button.addEventListener("click", () => {
+      if (answerTimer) return;
       answerList.querySelectorAll(".answer-btn").forEach((item) => {
         item.classList.remove("selected");
         item.disabled = true;
       });
       button.classList.add("selected");
-      setTimeout(() => chooseAnswer(answer), 180);
+      answerTimer = setTimeout(() => {
+        answerTimer = null;
+        chooseAnswer(answer);
+      }, 180);
     });
     answerList.append(button);
   });
@@ -483,7 +488,12 @@ function resetQuiz({ scrollToQuiz = true } = {}) {
 
 backBtn.addEventListener("click", () => {
   if (state.step === 0) return;
+  if (answerTimer) {
+    clearTimeout(answerTimer);
+    answerTimer = null;
+  }
   state.step -= 1;
+  state.answers.splice(state.step, 1);
   renderQuestion();
 });
 
