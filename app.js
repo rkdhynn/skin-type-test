@@ -325,8 +325,9 @@ const shareBtn = $("#shareBtn");
 const startBtn = $("#startBtn");
 const quizPanel = $("#quizPanel");
 const resultVisual = $("#resultVisual");
+const introPanel = document.querySelector(".intro-panel");
 
-function renderQuestion() {
+function renderQuestion({ hideIntro = true } = {}) {
   const question = questions[state.step];
   stepLabel.textContent = `${state.step + 1} / ${questions.length}`;
   progressFill.style.width = `${(state.step / questions.length) * 100}%`;
@@ -351,6 +352,9 @@ function renderQuestion() {
   });
 
   backBtn.disabled = state.step === 0;
+  if (hideIntro) {
+    introPanel.classList.add("hidden");
+  }
   quizPanel.classList.remove("hidden");
   questionCard.classList.remove("hidden");
   resultPanel.classList.add("hidden");
@@ -460,9 +464,10 @@ function renderResult() {
   renderProducts(primaryType);
 
   quizPanel.classList.add("hidden");
+  introPanel.classList.add("hidden");
   questionCard.classList.add("hidden");
   resultPanel.classList.remove("hidden");
-  resultPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function resetQuiz({ scrollToQuiz = true } = {}) {
@@ -503,5 +508,5 @@ startBtn.addEventListener("click", () => {
   resetQuiz();
 });
 
-renderQuestion();
+renderQuestion({ hideIntro: false });
 quizPanel.classList.add("hidden");
