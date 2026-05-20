@@ -215,7 +215,7 @@ const typeData = {
   oily: {
     label: "지성",
     color: "#1587e8",
-    title: "유분 많은 지성 피부",
+    title: "지성 피부",
     tags: "#피지 #모공 #번들거림",
     summaryLead: "번들거림이 빨리 올라오고 모공 고민이 잘 보이는 타입이에요. ",
     highlight: "유분을 잡되 수분은 남기는 산뜻한 루틴",
@@ -233,7 +233,7 @@ const typeData = {
   dry: {
     label: "건성",
     color: "#1587e8",
-    title: "수분 부족 건성 피부",
+    title: "건성 피부",
     tags: "#당김 #각질 #보습 고민",
     summaryLead: "세안 후 당김과 들뜸이 쉽게 느껴지는 타입이에요. ",
     highlight: "세안은 줄이고 보습막을 오래 남기는 루틴",
@@ -251,7 +251,7 @@ const typeData = {
   combination: {
     label: "복합성",
     color: "#1587e8",
-    title: "부위별 복합성 피부",
+    title: "복합성 피부",
     tags: "#T존유분 #볼당김 #밸런스",
     summaryLead: "T존은 번들거리고 볼은 건조한 신호가 함께 보여요. ",
     highlight: "부위별로 보습 양을 조절하는 루틴",
@@ -269,7 +269,7 @@ const typeData = {
   dehydrated: {
     label: "수부지",
     color: "#1587e8",
-    title: "수분부족 지성 민감",
+    title: "수부지 피부",
     tags: "#여드름 #잡티 #탄력 고민",
     summaryLead: "겉은 번들거리지만 속은 건조한, 유분과 수분의 균형이 무너진 피부예요. 그래서 피지만 잡는 관리보다 ",
     highlight: "수분 충전과 산뜻한 보습을 함께하는 루틴",
@@ -287,7 +287,7 @@ const typeData = {
   sensitive: {
     label: "민감",
     color: "#1587e8",
-    title: "자극 민감성 피부",
+    title: "민감성 피부",
     tags: "#홍조 #열감 #장벽 고민",
     summaryLead: "붉은기와 따가움이 쉽게 올라오는 타입이에요. ",
     highlight: "기능성은 줄이고 장벽을 먼저 달래는 루틴",
